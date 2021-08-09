@@ -450,8 +450,16 @@ font-weight: 500;
 }
 .plans-container-slider{
   background-color: var(--off-white);
-}
+  height: 400px;
+  display: flex;
+  gap: 35px ;
+  overflow-x: scroll;
+  overscroll-behavior-x:contain;
+  scroll-snap-type: x proximity;
+  scrollbar-color: transparent;
+  }
 .plans-container-card{
+  scroll-snap-align: center;
    margin: 0 auto;
    padding-top: 60px;
    margin-bottom: 20px;
@@ -474,6 +482,39 @@ font-weight: 500;
   border-radius: 5px;
 }
 
+.plans-container-card .basic{
+  margin: 0 auto;
+  justify-content: center;
+  text-align: center;
+  border: 1px solid var(--bitcoin-orange);
+  width: 110px;
+  height: 35px;
+  position:relative;
+  top:15px;
+  color: var(--just-white);
+  font-weight: bold;
+  background-color: #F7931A;
+  padding-top: 8px;
+  font-size: 14px;
+  border-radius: 5px;
+}
+
+.plans-container-card .semestral{
+  margin: 0 auto;
+  justify-content: center;
+  text-align: center;
+  border: 1px solid var(--bitcoin-orange);
+  width: 110px;
+  height: 35px;
+  position:relative;
+  top:15px;
+  color: var(--just-white);
+  font-weight: bold;
+  background-color: #F7931A;
+  padding-top: 8px;
+  font-size: 14px;
+  border-radius: 5px;
+}
 .plan-info-card{
   justify-content: center;
   margin: 0 auto;
@@ -539,6 +580,7 @@ font-weight: 500;
   bottom: 10px;
   align-items: center;
   border:2px solid var(--bitcoin-orange); 
+  border-radius: 4px;
 }
 
 .plan-info-card button:hover{
